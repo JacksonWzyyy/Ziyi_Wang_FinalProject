@@ -16,9 +16,9 @@ def load_csv_file(file_path, encoding='utf-8'):
         return None
 
 # Example usage in your app
-salary_df = load_csv_file(r'.\nba_2022-23_all_stats_with_salary.csv', 'ISO-8859-1')
-final_df = load_csv_file(r'.\final_merged_data.csv', 'ISO-8859-1')
-new_df = load_csv_file(r".\new_merged_data.csv",'ISO-8859-1')
+salary_df = load_csv_file(r'nba_2022-23_all_stats_with_salary.csv', 'ISO-8859-1')
+final_df = load_csv_file(r'final_merged_data.csv', 'ISO-8859-1')
+new_df = load_csv_file(r"new_merged_data.csv",'ISO-8859-1')
 # Split the first row to create column names
 original_column = final_df.columns
 column_names = original_column[0].split(',')
